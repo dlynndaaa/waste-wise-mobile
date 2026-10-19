@@ -1,7 +1,7 @@
 import { Stack, useRouter, useSegments } from 'expo-router';
 import { useEffect } from 'react';
 import { Provider, useSelector } from 'react-redux';
-import store from '../redux/store';
+import store from '../redux/Store';
 
 function RootNavigation() {
   const user = useSelector((state: any) => state.user.user);
@@ -12,9 +12,9 @@ function RootNavigation() {
     const inAuthGroup = segments[0] === '(auth)';
 
     if (!user && !inAuthGroup) {
-      router.replace('/(auth)/login');
+      router.replace('/(auth)/login' as any);
     } else if (user && inAuthGroup) {
-      router.replace('/(tabs)');
+      router.replace('/(tabs)' as any);
     }
   }, [user, segments]);
 

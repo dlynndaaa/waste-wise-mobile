@@ -1,14 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Image, Dimensions, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useEffect, useRef, useState } from 'react';
+import { Dimensions, FlatList, Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useSelector } from 'react-redux';
 
 const { width } = Dimensions.get('window');
 
 const posters = [
-  { id: '1', image: require('../assets/gambar1.png') },
-  { id: '2', image: require('../assets/gambar2.png') },
-  { id: '3', image: require('../assets/gambar3.jpeg') },
+  { id: '1', image: require('../../assets/images/gambar1.png') },
+  { id: '2', image: require('../../assets/images/gambar2.png') },
+  { id: '3', image: require('../../assets/images/gambar3.jpeg') },
 ];
 
 const Home = ({ navigation }) => {

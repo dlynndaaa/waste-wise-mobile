@@ -47,8 +47,7 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Image source={require('../../assets/images/logo.png')} style={styles.logo} /> 
-      {/* Catatan: Sesuaikan jalur gambar logo.png jika letak foldernya berbeda */}
+      <Image source={require('../../../assets/images/logo.png')} style={styles.logo} />      {/* Catatan: Sesuaikan jalur gambar logo.png jika letak foldernya berbeda */}
       <Text style={styles.appName}>Waste Wise</Text>
       <View style={styles.innerContainer}>
         <Text style={styles.title}>Login</Text>
